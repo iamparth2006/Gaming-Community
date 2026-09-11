@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="signup-container">
+    
+    <!-- Deadpool Image Overlay -->
+    <img src="Dpool.png" alt="Deadpool" class="deadpool-img">
+
+    <!-- Form Box -->
+    <div class="form-box">
+      
+      <!-- Brand Logo / Name -->
+      <div class="logo">
+        <!-- Change the src below to your icon image when ready -->
+        <img src="icon.png" alt="Logo" class="logo-img">
+        <span>BrandName</span>
+      </div>
+
+      <h2>Create Account</h2>
+      <p class="subtitle">Join our community today</p>
+
+      <form id="signupForm">
+        
+        <!-- Grid Row for First & Last Name -->
+        <div class="row">
+          <div class="input-group">
+            <label>Name</label>
+            <div class="input-field">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="name" placeholder="First Name" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Surname</label>
+            <div class="input-field">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" id="surname" placeholder="Last Name" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid Row for Gender & Code -->
+        <div class="row">
+          <div class="input-group">
+            <label>Gender</label>
+            <div class="input-field">
+              <i class="fa-solid fa-venus-mars"></i>
+              <select id="gender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Invite Code</label>
+            <div class="input-field">
+              <i class="fa-solid fa-ticket"></i>
+              <input type="text" id="inviteCode" placeholder="Code">
+            </div>
+          </div>
+        </div>
+
+        <!-- Full Width Email -->
+        <div class="input-group">
+          <label>Email Address</label>
+          <div class="input-field">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" id="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">
+          Sign Up <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+      </form>
+
+      <!-- Social Signup -->
+      <p class="divider-text">Or sign up with</p>
+      <div class="social-buttons">
+        <button class="social-btn"><i class="fa-brands fa-apple"></i> Apple</button>
+        <button class="social-btn"><i class="fa-brands fa-github"></i> GitHub</button>
+        <button class="social-btn"><i class="fa-brands fa-google"></i> Google</button>
+      </div>
+
+      <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
